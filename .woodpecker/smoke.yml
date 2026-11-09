@@ -1,0 +1,10 @@
+when:
+  - event: manual
+
+steps:
+  - name: smoke-test
+    image: alpine:3.20
+    commands:
+      - echo "TOSANT_WOODPECKER_SMOKE_TEST_PASS"
+      - uname -a
+      - echo "WOODPECKER_AGENT_EXECUTION_OK"
